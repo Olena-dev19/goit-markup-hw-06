@@ -35,11 +35,27 @@ img {
 }
 
 .container {
-    max-width: 1158px;
+    /* max-width: 1158px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 15px; */
+    max-width: 320px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media  screen and (min-width:1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
 }
 
 /* header */
@@ -232,7 +248,8 @@ img {
 /* solutions */
 
 .section-solutions {
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .solutions-container {
@@ -253,46 +270,92 @@ img {
 }
 
 
+
+@media screen and(min-width:1158px) {
+   
+}
+
 .solutions-link {
-    display: flex;
+    /* 
     flex-direction: row;
-    gap: 24px;
-    align-items: center;
-}
-
-.solutions-link-item {
-    width: calc((100% - 72px) / 4)
-}
-
-.box-item {
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    background: #f4f4fd;
-    padding-bottom: 8px;
-    padding: 24px 100px;
-    position: relative;
-    margin-bottom: 8px;
+    align-items: center; */
     display: flex;
+    flex-direction: column;
+    gap: 72px;
     align-items: center;
     justify-content: center;
-    height: 112px;
+    max-width: 288px;
+
 }
 
-.titl {
+/* .solutions-link-item {
+    width: calc((100% - 72px) / 4)
+} */
 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+@media screen and (min-width:1158px) {
+   .box-item {
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        background: #f4f4fd;
+        padding-bottom: 8px;
+        padding: 24px 100px;
+        position: relative;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+    }
+    .icon {
+        overflow: visible;
+    }
+}
+
+@media screen and (max-width:1158px) {
+    .box-item .icon + use {
+        overflow: hidden;
+    }
+}
+
+
+
+.titl {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
     margin-bottom: 8px;
     
 }
+
+@media screen and(min-width:768px) {
+    
+}
+
+@media screen and(min-width:1158px) {
+    .titl {
+        /* font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+             */
+    }
+}
+
 .text-sol {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #434455;
+}
+
+@media screen and(min-width:1158px) {
+    .text-sol {
+        font-weight: 400;
+    }
 }
 
 /* team */
