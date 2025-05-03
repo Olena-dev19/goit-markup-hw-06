@@ -268,7 +268,7 @@ img {
 
 
 .solutions-link-item {
-    
+    width: calc((100% - 24px) / 2);
 }
 
 
@@ -303,7 +303,7 @@ img {
 /* team */
 .section-team {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    padding: 72px 0;
 }
 .title-team {
     font-weight: 700;
@@ -316,14 +316,15 @@ img {
     margin-bottom: 72px;
 }
 
+
+
 .section-team-item {
     display: flex;
-    flex-basis: calc(( 100% - 24px * 3 ) / 4);
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 72px;
 }
 .sect-team-card {
     background-color: #ffffff;
@@ -332,7 +333,7 @@ img {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    width: calc(( 100% - 72px) / 4 );
+    
     
 }
 
@@ -406,7 +407,8 @@ img {
 
 /* portfolio */
 .section-portfolio {
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .section-portf-title {
@@ -421,12 +423,12 @@ img {
 }
 .sect-portf-link {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 48px;
+    gap: 48px;
     align-items: center;
-    column-gap: 24px;
+    
 }
 
 .sect-port-item {  
