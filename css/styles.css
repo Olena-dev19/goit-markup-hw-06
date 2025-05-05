@@ -58,11 +58,13 @@ img {
     color: #4d5ae5;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    display: flex;
+    display: inline-flex;
+    /* display: flex; */
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
     gap: 0px;
+    padding: 16px;
 }
 
 .logo-head {
@@ -94,7 +96,8 @@ img {
 }
 
 .nav-list {
-    display: flex;
+    /* display: flex; */
+    display: none;
     gap: 40px;
 }
 .nav {
@@ -145,7 +148,8 @@ img {
 
 
 .cont-list {
-    display: flex;
+    /* display: flex; */
+    display: none;
     gap: 40px;
 }
 .cont {
@@ -170,16 +174,32 @@ img {
     color: #404BBF;
 }
 
+.header-menu {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.header-solid-menu {
+    fill: #2F2F37;
+    stroke: none;
+}
 
 /* maine banner */
 .banner {
     background-color: #2E2F42;
-    padding: 188px 0;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/beckgr-img.jpg);
+    /* padding: 188px 0; */
+    padding: 72px 0;
+    /* background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/beckgr-img.jpg); */
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    max-width: 320px;
     margin: 0 auto;
 }
 .maine-banner-container {
@@ -194,15 +214,19 @@ img {
 
 
 .banner .maine-title {
-    max-width:496px;
+    /* max-width:496px; */
+    max-width: 216px;
     color: #ffffff;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    /* font-size: 56px; */
+    font-size: 36px;
+    /* line-height: 1.07; */
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-shadow: 0 4px 4px  rgba(0, 0, 0, 0.25);
     text-align: center;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px;
 }
 
 .banner .buttom {
@@ -217,6 +241,7 @@ img {
     border-radius: 4px;
     border: none;
     min-width: 169px;
+    height: 56px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -227,7 +252,6 @@ img {
     background-color: #404BBF;
 
 }
-
 
 
 /* solutions */
@@ -407,7 +431,6 @@ img {
 
 /* portfolio */
 .section-portfolio {
-    /* padding: 120px 0; */
     padding: 96px 0;
 }
 
@@ -499,30 +522,31 @@ img {
 /* footer */
 .footer-sect{
     background-color:#2e2f42;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    
+    padding: 96px 0;
 }
 
 .footer-container {
     display: flex;
+    flex-direction: column;
+    gap: 72px;
     
 }
 
 .footer-sect-cont {
-   margin-right: 120px;
+   
 }
 
 .logo-ft {
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
+    text-align: center;
 }
 .logo-foot {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    text-transform:uppercase;
     color: #f4f4fd
 }
 .footer-txt {
@@ -531,13 +555,13 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    max-width: 264px;
+    max-width: 288px;
     
    
 }
 
 .footer-icons {
-    margin-right: 80px;
+    
 }
 
 .footer-icons-text {
@@ -546,6 +570,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    text-align: center;
     margin-bottom: 16px;
 }
 
@@ -599,7 +624,7 @@ img {
 /* footer-label-input */
 
 .footer-form-useremail {
-   
+  
    
 }
 
@@ -610,25 +635,30 @@ img {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-form-container {
    display: flex;
-   gap: 24px;
+   flex-direction: column;
+   gap: 16px;
+
 }
 
 .footer-email-form {
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    min-width: 288px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.3;
     background-color: transparent;
     padding-left: 16px;
     color: #fff;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    margin: 0 auto;
 }
 
 .footer-email-form::placeholder {
@@ -644,7 +674,8 @@ img {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    display: flex;
+    /* display: flex; */
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
@@ -655,6 +686,7 @@ img {
     background-color: #4d5ae5;
     border: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
 
 }
 
