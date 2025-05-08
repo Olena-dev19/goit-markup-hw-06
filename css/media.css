@@ -325,7 +325,6 @@
     @media screen and (min-width: 768px) {
         .modal {
             max-width: 408px;
-            max-height: 584px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -335,7 +334,18 @@
 
     /* Desktop */
     @media only screen and (min-width:1158px) {
-        .modal {
-           
+        .modal-popup-input {
+            padding: 11px 38px;
+        }
+        .modal-popup-input:focus {
+            border: 1px solid #4d5ae5;
+        
+        }
+        .modal-popup-input:focus+.modal-input-icon {
+            fill: #4d5ae5;
+            stroke: none;
+        }
+        .modal-popup-textarea:focus {
+            border: 1px solid #4d5ae5;
         }
     }
